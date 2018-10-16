@@ -5,10 +5,6 @@ $(function(){
     const url = `product/${id}/description`
     $.get(url, data => {
       $('#product-' + id).text(data)
-      // document.getElementById(`product-${id}`).innerHTML = data
-      // debugger
     })
   })
-
-
 })
