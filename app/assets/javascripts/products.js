@@ -16,9 +16,5 @@ $(function(){
         div.text("Sold Out");
       }
     })
-
-
-
-
   })
 })
