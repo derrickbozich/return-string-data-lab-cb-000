@@ -1,15 +1,15 @@
 $(function(){
   $('.js-more').on('click', function(){
     const id = parseInt(this.dataset.id)
-    const description = `product/${id}/description`
-    const inventory = `product/${id}/inventory`
+    const descriptionURL = `product/${id}/description`
+    const inventoryURL = `product/${id}/inventory`
 
-    $.get(description, data => {
+    $.get(descriptionURL, data => {
       let pTag = string.concat()
       $('#product-' + id).text(data)
     })
 
-    $.get(inventory, data => {
+    $.get(inventoryURL, data => {
       debugger
       $('#product-' + id).text(data)
     })
