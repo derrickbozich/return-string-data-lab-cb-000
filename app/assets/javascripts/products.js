@@ -1,6 +1,6 @@
 // My Solution
-$(function(e){
-  $('.js-more').on('click', function(){
+$(function(){
+  $('.js-more').on('click', function(e){
     const id = parseInt(this.dataset.id)
     const descriptionURL = `product/${id}/description`
     const inventoryURL = `product/${id}/inventory`
