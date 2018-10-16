@@ -3,6 +3,10 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
+  def create
+    product 
+  end
+
   def description
     product = Product.find_by_id(params['id'])
     if product
@@ -21,6 +25,9 @@ class ProductsController < ApplicationController
     end
   end
 
-  
+  # private
+  # def product_params
+  #   params.require(:product)
+  # end
   
 end
