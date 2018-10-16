@@ -4,9 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def create
-  
     product = Product.create(product_params)
-    binding.pry
     redirect_to products_path
   end
 
