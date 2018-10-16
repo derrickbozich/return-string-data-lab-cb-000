@@ -1,5 +1,5 @@
 // My Solution
-$(function(){
+$(function(e){
   $('.js-more').on('click', function(){
     const id = parseInt(this.dataset.id)
     const descriptionURL = `product/${id}/description`
@@ -17,5 +17,6 @@ $(function(){
         div.text("Sold Out");
       }
     })
+    e.preventDefault();
   })
 })
