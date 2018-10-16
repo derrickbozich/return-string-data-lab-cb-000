@@ -5,12 +5,11 @@ $(function(){
     const inventoryURL = `product/${id}/inventory`
 
     $.get(descriptionURL, data => {
-      $('#product-' + id).text(data)
+      $('#product-' + id).text(data);
     })
 
     $.get(inventoryURL, data => {
-      debugger
-      $('#product-' + id + '-inventory').text(data)
+      const result = $('#product-' + id + '-inventory').text(data);
     })
 
 
