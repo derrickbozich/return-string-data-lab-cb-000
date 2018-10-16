@@ -9,7 +9,12 @@ $(function(){
     })
 
     $.get(inventoryURL, data => {
-      const result = $('#product-' + id + '-inventory').text(data);
+      const div = $('#product-' + id + '-inventory');
+      if (data) {
+        div.text("Available");
+      } else {
+        div.text("Sold Out");
+      }
     })
 
 
