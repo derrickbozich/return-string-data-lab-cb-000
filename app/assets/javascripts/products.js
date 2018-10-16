@@ -1,9 +1,12 @@
 $(function(){
   $('.js-more').on('click', function(){
     const id = parseInt(this.dataset.id)
-    const url = `product/${id}/description`
-    $.get(url, data => {
+    const description = `product/${id}/description`
+    const inventory = `product/${id}/inventory`
+    $.get(description, data => {
       $('#product-' + id).text(data)
     })
+
+    
   })
 })
