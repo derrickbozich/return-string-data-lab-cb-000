@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # products = ["tv", "vcr", "macbook", "macbook air", "mouse", "chair", "desk", "lamp", "water bottle"]
-# 
+#
 # 10.times do
 #   products = ["tv", "vcr", "macbook", "macbook air", "mouse", "chair", "desk", "lamp", "water bottle"]
 #   Product.create(:name => products.sample, :price => Faker::Number.between(1,1500))
@@ -15,7 +15,7 @@
 # 5.times do
 #   Customer.create(:name => Faker::Name.name)
 # end
-# 
+#
 # 5.times do
 #   Invoice.create
 # end
@@ -26,7 +26,4 @@
 
 Product.create!(name: "Moog Model D", inventory: 1, description: "This is a test description with more text than should be there.")
 Product.create!(name: "Elektron Analog 4", inventory: 0, description: "This is a test description with more text than should be there.")
-Product.create!(name: "Fender Jaguar", inventory: 0, description: "This is a test description with more text than should be there.")
-
-
-
+Product.create!(name: "Fender Jaguar", inventory: 2, description: "This is a test description with more text than should be there.")
