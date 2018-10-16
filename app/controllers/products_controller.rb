@@ -4,7 +4,8 @@ class ProductsController < ApplicationController
   end
 
   def create
-    product 
+    binding.pry
+    product = Product.create()
   end
 
   def description
