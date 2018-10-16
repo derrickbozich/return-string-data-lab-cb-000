@@ -5,13 +5,12 @@ $(function(){
     const inventoryURL = `product/${id}/inventory`
 
     $.get(descriptionURL, data => {
-      let pTag = string.concat()
       $('#product-' + id).text(data)
     })
 
     $.get(inventoryURL, data => {
       debugger
-      $('#product-' + id).text(data)
+      $('#product-' + id + '-inventory').text(data)
     })
 
 
