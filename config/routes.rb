@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   resources :orders
   resources :invoices
   resources :products, only: [:new, :index]
-
+  get 'product/:id/description' => 'products#description', as: 'product_description'
 end
