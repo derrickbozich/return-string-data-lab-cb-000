@@ -6,6 +6,7 @@ class ProductsController < ApplicationController
   def create
     binding.pry
     product = Product.create()
+    redirect_to products_path
   end
 
   def description
@@ -28,7 +29,7 @@ class ProductsController < ApplicationController
 
   # private
   # def product_params
-  #   params.require(:product)
+  #   params.require(:product).permit(:name, :price, :inventory, :description)
   # end
   
 end
