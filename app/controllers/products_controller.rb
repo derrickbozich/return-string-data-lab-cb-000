@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     if product
       render :plain product.description
     else
-      
+      render :plain 'no description'
     end
   end
   
