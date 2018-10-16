@@ -6,18 +6,18 @@ class ProductsController < ApplicationController
   def description
     product = Product.find_by_id(params['id'])
     if product
-      render :plain product.description
+      render plain: product.description
     else
-      render :plain 'cannot find product'
+      render plain: 'cannot find product'
     end
   end
 
   def inventory
     product = Product.find_by_id(params['id'])
     if product
-      render :plain product.inventory > 0
+      render plain: product.inventory > 0
     else
-      render :plain 'cannot find product'
+      render plain: 'cannot find product'
     end
   end
 
